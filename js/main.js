@@ -16,7 +16,7 @@ isInteger = false;
 // expression that looks at the value of `isSafeInteger`. When `isSafeInteger`
 // becomes `true`, the `while` loop should stop looping.
 
-while (isInteger = false) {
+while (!isInteger) {
   maxNumber = prompt("Please enter a maximum number for FizzBuzz! (use whole numbers)");
   maxNumber = parseInt(maxNumber);
   if (Number.isSafeInteger(maxNumber) && maxNumber > 0) {
@@ -46,11 +46,14 @@ for (let i=1; i <= maxNumber; i++) {
 // TODO: In preparation for creating the output text for your FizzBuzz results,
 // initialize the `fbText` variable to an empty string.
 
-fbText = "";
+fbText = '';
 
 // TODO: Use a `for ... of` loop to concatenate the values from `fbResults`
 // into the variable `fbText`.
 
+for (let result of fbResults){
+  fbText = fbText + result + "\n";
+}
 
 ///////////////////////////////////////////////////////////////////////
 // Do not edit below this line unless you are doing something fancy!
