@@ -46,6 +46,8 @@ for (let i=1; i <= maxNumber; i++) {
 // TODO: In preparation for creating the output text for your FizzBuzz results,
 // initialize the `fbText` variable to an empty string.
 
+fbText = "";
+
 // TODO: Use a `for ... of` loop to concatenate the values from `fbResults`
 // into the variable `fbText`.
 
