@@ -29,11 +29,11 @@ fbResults = [];
 //  Create a `for` loop that will execute the `maxNumber` of times.
 for (let i=1; i <= maxNumber; i++) {
 
-  if (i % 15 == 0) {
+  if (i % 15 === 0) {
     fbResults.push('FizzBuzz');
-  } else if (i % 3 == 0) {
+  } else if (i % 3 === 0) {
     fbResults.push('Fizz');
-  } else if (i % 5 == 0) {
+  } else if (i % 5 === 0) {
     fbResults.push('Buzz');
   } else {
     fbResults.push(i);
@@ -43,8 +43,8 @@ for (let i=1; i <= maxNumber; i++) {
 // require the use of several conditional statements that use the `%` operator.
 // Store the results of this logic in an array called `fbResults`.
 
-//  In preparation for creating the output text for your FizzBuzz results,
-// initialize the `fbText` variable to an empty string.
+
+// Initialize the `fbText` variable to an empty string to store our result.
 
 fbText = '';
 
