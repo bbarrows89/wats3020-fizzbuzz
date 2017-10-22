@@ -3,9 +3,9 @@
 // Declare needed variables.
 
 let isInteger,
-    maxNumber,
-    fbResults,
-    fbText;
+  maxNumber,
+  fbResults,
+  fbText;
 
 //  Initialize a variable `isInteger` to use as a control value for the
 // `while` loop. Set the initial value to `false`.
@@ -18,7 +18,7 @@ isInteger = false;
 // becomes `true`, the `while` loop should stop looping.
 
 while (!isInteger) {
-  maxNumber = prompt("Please enter a maximum number for FizzBuzz! (use whole numbers)");
+  maxNumber = prompt('Please enter a maximum number for FizzBuzz! (use whole numbers)');
   maxNumber = parseInt(maxNumber);
   if (Number.isSafeInteger(maxNumber) && maxNumber > 0) {
     isInteger = true;
@@ -33,8 +33,7 @@ fbResults = [];
 // Start if/elif/else logic with most general case (i.e. divisible by 3 and 5)
 // Proceed to check for divisibility, and if number is not divisible, push the number.
 
-for (let i=1; i <= maxNumber; i++) {
-
+for (let i = 1; i <= maxNumber; i++) {
   if (i % 15 === 0) {
     fbResults.push('FizzBuzz');
   } else if (i % 3 === 0) {
@@ -53,8 +52,8 @@ fbText = '';
 //  Use a `for ... of` loop to concatenate the values from `fbResults`
 // into the variable `fbText`.
 
-for (let result of fbResults){
-  fbText = fbText + result + "\n";
+for (let result of fbResults) {
+  fbText = fbText + result + '\n';
 }
 
 ///////////////////////////////////////////////////////////////////////
