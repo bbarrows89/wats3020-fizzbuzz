@@ -1,10 +1,11 @@
 /* Code for WATS 3020 FizzBuzz Assignment */
 
+// Declare needed variables.
+
 let isInteger,
     maxNumber,
     fbResults,
     fbText;
-
 
 //  Initialize a variable `isInteger` to use as a control value for the
 // `while` loop. Set the initial value to `false`.
@@ -25,8 +26,13 @@ while (!isInteger) {
 }
 
 //  Initialize the `fbResults` variable to an empty Array
+
 fbResults = [];
+
 //  Create a `for` loop that will execute the `maxNumber` of times.
+// Start if/elif/else logic with most general case (i.e. divisible by 3 and 5)
+// Proceed to check for divisibility, and if number is not divisible, push the number.
+
 for (let i=1; i <= maxNumber; i++) {
 
   if (i % 15 === 0) {
@@ -39,10 +45,6 @@ for (let i=1; i <= maxNumber; i++) {
     fbResults.push(i);
   }
 }
-//  Create logic inside the `for` loop to calculate FizzBuzz.  This will
-// require the use of several conditional statements that use the `%` operator.
-// Store the results of this logic in an array called `fbResults`.
-
 
 // Initialize the `fbText` variable to an empty string to store our result.
 
